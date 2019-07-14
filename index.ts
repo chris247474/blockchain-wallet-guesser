@@ -1,7 +1,5 @@
 const number_to_base = require("number-to-base");
 
-const hexLength = 64;
-
 export const randomIntFromInterval = (min: number = 0, max:number = 10) => // min and max included
 {
     return Math.floor(Math.random() * Math.floor(max));
@@ -34,6 +32,8 @@ export const convertHexStringToNum = (hexString: string, base: number = 16) => {
     return parseInt(hexString, 16);
 }
 
-export const createWalletPrivateKey = () => {
-    
+export const createWalletPrivateKeyFromNumber = (num: number) => {
+    return convertNumToHexString(num);
 }
+
+export default createWalletPrivateKeyFromNumber;
