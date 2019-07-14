@@ -26,7 +26,7 @@
     "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
   },
   "dependencies": {
-    "ethers": "^4.0.33"
+    "ethers": "^4.0.33",
+    "number-to-base": "^1.0.0"
   }
 }
-
