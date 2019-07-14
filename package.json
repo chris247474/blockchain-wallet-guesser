@@ -1,0 +1,32 @@
+{
+  "name": "walletguesser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christopher Verceles <ctverceles@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "replace:this:with:command:pretest": "npm run lint",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+  },
+  "dependencies": {
+    "ethers": "^4.0.33"
+  }
+}
+
