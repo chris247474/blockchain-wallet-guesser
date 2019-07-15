@@ -86,8 +86,10 @@ describe('Testing wallet private key guesser', () => {
         expect(account.accounts).not.toBeUndefined();
         expect(account.accounts.wallet).not.toBeUndefined();
 
-        const balance = await walletHelper.checkBalances(privKey, net);
-        console.log('balance: ', balance);
+        //const balance = await walletHelper.checkBalances(privKey, net);
+        //console.log('balance: ', balance);
+
+        // check transaction history
     })
 
     afterEach(() => {
